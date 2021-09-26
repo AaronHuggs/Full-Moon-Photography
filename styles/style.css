@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a {
+    font-size: 0.8em;
+    color:rgba(80, 78, 78, 0.7);
+}
 
+a:visited {
+    color:rgba(80, 78, 78, 0.7);
+}
 
 .hamburger {
     width: 35px;
@@ -15,47 +23,251 @@
 }
 
 header {
-    height: 20vw;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav {
     background-color: slategrey;
     width: 100vw;
-    height: 20vw;
+    height: 10vh;
     display: inline-flex;
     justify-content:space-between;
     align-items: center;
-    padding: 0 5%;
+    padding: 5%;
 }
 
 nav img {
     object-fit: cover;
-    width: 50%;
-    justify-self: flex-start;
+    width: 40%;
 }
 
 main img {
-    width: 100vw;
+    width: 90vw;
+    justify-content: center;
+    
 }
 
 main {
     background-color: whitesmoke;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .landing {
-    position: relative;
+    padding-top: 40px;
+    padding-left: 10vw;
+    padding-bottom: 10vh;
 }
 
 .landing img {
-    transform: scaleX(-1);  
+    transform: scaleX(-1);
+    width: 90vw; 
+    padding: 5vw;
 }
+
 .landing .overlay {
     position: absolute;
-    top: 40px;
-    left: 0px;
-    color: white;
-    padding-left: 20px;
-    width: 55vw;
+    padding: 10px;
+    color: rgb(17, 17, 17);
+    top: 300px;
+    left: 30px;
+    width: 80vw;
     line-height:30px;
+    background: rgba(214, 214, 214, 0.7);
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(214, 214, 214, 0.7);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    opacity: 0.7;
+}
+
+.heading {
+    height: 10vh;
+    font-size: large;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 20px;  
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 0.8em;
+}
+
+.heading span {
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+
+.services figure {
+    padding-bottom: 20px;
+}
+
+.services img {
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+
+.about {
+    padding-top: 30px;
+    margin-top: 20px;
+    
+    padding-bottom: 20px;
+}
+
+.about figure img {
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.about figure {
+    position: relative;
+}
+
+.about figure p{
+    color: white;
     background: rgba(80, 78, 78, 0.7);
+    text-transform: uppercase;
+    position: absolute;
+    left: 5%;
+    bottom: 7%;
+    padding: 2px;
+}
+
+.about article {
+    width: 75vw;
+    margin: auto;
+    display: block; 
+    line-height: 30px;
+}
+
+.featured {
+    background-color: rgba(214, 214, 214, 0.7);
+    padding-bottom: 30px;
+}
+
+.featured figure img {
+    margin: auto;
+    display: block;
+    padding: 5px 0;
+}
+
+.featured h3 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.testimonials {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.testimonials figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    line-height: 30px;
+    margin: 20px;
+}
+.testimonials p {
+    font-style: italic;
+}
+
+.blog {
+    padding-bottom: 30px;
+    background-color: rgba(214, 214, 214, 0.7);
+}
+
+.blog p {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    line-height: 30px;
+    margin: 20px;
+}
+
+.blog-post1 {
+    grid-column: 1;
+}
+
+.blog-post2 {
+    grid-column: 2;
+}
+
+.blog figure img {
+    margin: auto;
+    display: block;
+    padding: 0;
+    width: 35vw;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.contact {
+    padding-top: 6vh;
+    padding-bottom: 10vh;
+}
+
+.contact-icons {
+    padding-top: 20px;
+    width: 40%;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: 25vw;
+}
+
+.contact-icons img{
+    width: 40px;
+    padding: 0;
+}
+
+footer {
+    
+    background-color: rgba(214, 214, 214, 0.7);
+    text-align: center;
+}
+
+.links {
+    display: flex; 
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20vw;
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+
+.summary p{
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.foot {
+    
+    background-color: slategrey;
 }
