@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 a {
     font-size: 0.8em;
     color:rgba(80, 78, 78, 0.7);
@@ -86,7 +87,7 @@ main {
     flex-direction: column;
     text-align: center;
     background-color: rgba(214, 214, 214, 0.7);
-    margin-top: 20px;
+    margin-top: 20%;
     padding-top: 10px;
     padding-bottom: 30px;
 }
@@ -124,8 +125,8 @@ h1 {
 .about {
     padding-top: 30px;
     margin-top: 20px;
-    
     padding-bottom: 20px;
+    
 }
 
 .about figure img {
@@ -144,8 +145,8 @@ h1 {
     text-transform: uppercase;
     position: absolute;
     left: 5%;
-    bottom: 7%;
-    padding: 2px;
+    bottom: 8%;
+    padding: 1%;
 }
 
 .about article {
@@ -153,6 +154,7 @@ h1 {
     margin: auto;
     display: block; 
     line-height: 30px;
+    font-size: 0.9rem;
 }
 
 .featured {
@@ -169,6 +171,7 @@ h1 {
 .featured h3 {
     text-align: center;
     padding-top: 5px;
+    text-transform: uppercase;
 }
 
 .testimonials {
@@ -186,6 +189,7 @@ h1 {
 }
 .testimonials p {
     font-style: italic;
+    text-align: center;
 }
 
 .blog {
@@ -227,22 +231,28 @@ h1 {
     object-fit: cover;
 }
 
+.blog h3 {
+    text-align: center;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
 .contact {
     padding-top: 6vh;
     padding-bottom: 10vh;
 }
 
 .contact-icons {
-    padding-top: 20px;
-    width: 40%;
-    display: inline-flex;
-    justify-content: space-around;
-    margin-left: 25vw;
+    padding-top: 0;
+    width: 90%;
+    margin-left: 20vw;
+
 }
 
 .contact-icons img{
-    width: 40px;
-    padding: 0;
+    width: 20%;
+    padding-left: 5%;
+    margin: auto;
 }
 
 footer {
@@ -252,11 +262,12 @@ footer {
 }
 
 .links {
+    text-transform: uppercase;
     display: flex; 
     justify-content: space-between;
-    width: 60%;
-    margin-left: 20vw;
+    width: 90%;
     padding: 20px 0;
+    margin: auto;
     font-size: 1.2em;
 }
 
