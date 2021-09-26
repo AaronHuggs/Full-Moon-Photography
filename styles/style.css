@@ -108,6 +108,13 @@ h1 {
     text-transform: uppercase;
     opacity: 0.8;
     font-size: 0.8em;
+    
+}
+
+@media screen and (min-width: 500px) {
+    .heading {    
+        height: 15vh;
+    }
 }
 
 .heading span {
