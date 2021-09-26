@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    
-}
+
 
 .hamburger {
     width: 35px;
@@ -16,8 +14,12 @@ body {
     justify-self: flex-end;
 }
 
+header {
+    height: 20vw;
+}
+
 nav {
-    background-color: gray;
+    background-color: slategrey;
     width: 100vw;
     height: 20vw;
     display: inline-flex;
@@ -32,3 +34,28 @@ nav img {
     justify-self: flex-start;
 }
 
+main img {
+    width: 100vw;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+.landing {
+    position: relative;
+}
+
+.landing img {
+    transform: scaleX(-1);  
+}
+.landing .overlay {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    color: white;
+    padding-left: 20px;
+    width: 55vw;
+    line-height:30px;
+    background: rgba(80, 78, 78, 0.7);
+}
