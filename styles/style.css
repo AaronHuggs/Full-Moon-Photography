@@ -507,6 +507,14 @@ footer {
     font-size: 1.2em;
 }
 
+.links a{
+    color:rgba(80, 78, 78, 0.9);
+}
+
+.links a:visited {
+    color:rgb(46, 45, 45);
+}
+
 .summary p{
     width: 70%;
     align-items: center;
