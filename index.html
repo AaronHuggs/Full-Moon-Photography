@@ -8,25 +8,32 @@
     <body>
         <header>
             <nav>
-                <img src='./images/logo.png'>
-                <div>
+                <a href='#'><img src='./images/logo.png'></a>
+                <div class='burger'>
                     <div class='hamburger'></div>
                     <div class='hamburger'></div>
                     <div class='hamburger'></div>
                 </div>
+                <ul class='navlist'>
+                    <li><a href='#services'>Services</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#featured'>Featured Work</a></li>
+                    <li><a href='#blog'>Blog</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
             </nav>
         </header>
         <main>
-            <section class='landing'>
+            <section class='landing' id='landing'>
                 <img src='./images/landing.jpg'>
                 <p class='overlay' style='line-height: 30px;'>
-                    <b>Abbotsford BC Portrait Photographer For Children, Families, And Professionals</b>
+                    <b>Vancouver BC Portrait Photographer For Children, Families, And Professionals</b>
                     <br>
                     <span>Capturing <em>Captivating Stories</em> For <em>Incredible People</em> Since 2019.</span>
                 </p>
             </section>
         
-            <section class='services'>
+            <section class='services' id='services'>
                 <div class='heading'>
                     <span>How can I help?</span>
                 </div>
@@ -42,7 +49,7 @@
                 </figure>
             </section>
 
-            <section class='about'>
+            <section class='about' id='about'>
                 <figure>
                     <img src='./images/photographer.jpg'>
                     <p>Hi, I'm Ashlyn.</p>
@@ -51,7 +58,7 @@
                     <p>
                         Thank you for visiting my website and for your interest in my work!
                         <br><br>
-                        I’m an on-location and studio portrait photographer serving Abbotsford BC and surrounding communities in the Fraser Valley. I specialize in portraiture of children, families and professionals and feel so grateful to create authentic photography for those around me.
+                        I’m an on-location and studio portrait photographer serving Vancouver BC and surrounding communities in the Fraser Valley. I specialize in portraiture of children, families and professionals and feel so grateful to create authentic photography for those around me.
                         <br><br>
                         I believe your portrait session should be an enjoyable and relaxed experience while we document the moments that matter most to you.
                         <br><br>
@@ -60,7 +67,7 @@
                 </article>
             </section>
 
-            <section class='featured'>
+            <section class='featured' id='featured'>
                 <div class='heading'>
                     <span>Featured Work</span>
                 </div>
@@ -75,17 +82,17 @@
                 </figure>
             </section>
 
-            <section class='testimonials'>
+            <section class='testimonials' id='testimonials'>
                 <div class='heading'>
                     <span>What They're Saying</span>
                 </div>
                 <figure>
-                    <article>
+                    <article class='test1'>
                         <p>
                             "Wow! WOW! I’m not crying, you’re crying! These are absolutely gorgeous! I am speechless. THANK YOU for capturing these amazing shots. My heart is full." <br>-Cheniqua
                         </p>
                     </article>
-                    <article>
+                    <article class='test2'>
                         <p>
                             "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip enim ad minim veniam, ex ea commodo consequat ullamco laboris!" <br>-Banjo
                         </p>
@@ -93,7 +100,7 @@
                 </figure>
             </section>
 
-            <section class='blog'>
+            <section class='blog' id='blog'>
                 <div class='heading'>
                     <span>Recent Blog Posts</span>
                 </div>
@@ -101,21 +108,21 @@
                     <figure class='blog-post1'>
                         <img src='./images/blog1.jfif'>
                         <p>
-                            Ice Cream, Is It Real, Or Merely A Simulation...
+                            Ice Cream, Is It Real, Or Merely A Simulation... <a href='#!'>Read More</a>
                         </p>
                     </figure>
                     <figure class='blog-post2'>
                         <img src='./images/blog2.jfif'>
                         <p>
-                            How Young Is Too Young To Become A Professional...
-                        </p>
+                            How Young Is Too Young To Become A Professional... <a href='#!'>Read More</a>
+                        </p> 
                     </figure>
                     
-            </div>
-            <h3><a href='#!'>View More</a></h3>
+                </div>
+            <h3><a href='#!'>View Blog</a></h3>
             </section>
 
-            <section class='contact'>
+            <section class='contact' id='contact'>
                 <div class='heading'>
                     <span>Let's Connect!</span>
                 </div>
@@ -128,10 +135,10 @@
         </main>
         <footer>
             <section class='links'>
-                <a href='#!'>Services</a>
-                <a href='#!'>Featured Work</a>
-                <a href='#!'>About</a>
-                <a href='#!'>Blog</a>
+                <a href='#services'>Services</a>
+                <a href='#featured'>Featured Work</a>
+                <a href='#about'>About</a>
+                <a href='#blog'>Blog</a>
             </section>
             <section class='summary'>
                 <article>
@@ -142,7 +149,10 @@
             </section>
             <section class='foot'>
                 <span>&copy; Full Moon Photography</span>
-                <span><p>Fictional Website. All photos from Unsplash.</p></span>
+                <span>
+                    <p style='margin-top:20px;'>Fictional Website created by <a href='https://github.com/AaronHuggs'>@AaronHuggs<img src='images/github.png'></a></p> 
+                    <p>All photos from <a href='www.https://unsplash.com/'>Unsplash.</a></p>
+                </span>
             </section>
         </footer>
     </body>
