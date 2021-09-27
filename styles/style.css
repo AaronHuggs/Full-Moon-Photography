@@ -7,10 +7,8 @@
     width: 100%;
 }
 
-@media screen and (min-width: 500px) {
-    body {
-        background-color: slategrey;
-    }
+body {
+    background-color: slategrey;
 }
 
 a {
@@ -22,25 +20,16 @@ a:visited {
     color:rgba(80, 78, 78, 0.7);
 }
 
-
 a:hover {
     color:rgb(46, 45, 45);
-}
-
-.hamburger {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    justify-self: flex-end;
 }
 
 header {
     height: 60px;
     top: 0;
-
 }
 
+/*Fixed to the top on mobile, to the left on desktop*/
 nav {
     background-color: slategrey;
     width: 100vw;
@@ -51,29 +40,41 @@ nav {
     align-items: center;
     padding: 50px;
     position: fixed;
-    
     z-index: 10;
 }
 
+/*disappears on desktop*/
+.hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    justify-self: flex-end;
+}
+
+/*hide the navlist links on mobile*/
 .navlist {
     display: none;
 }
 
-
+/*logo*/
 nav img {
     object-fit: cover;
     width: 200px;
 }
 
+/*burger nav button*/
 nav div {
     width: 35px;
 }
 
+/*on desktop*/
 @media screen and (min-width: 1200px) {
+    /*hide burger menu*/
     nav .burger {
         display: none;
     }
-
+    /*move the nav bar to the left*/
     nav {
         width: 200px;
         height: 100vh;
@@ -82,14 +83,13 @@ nav div {
         flex-direction: column;
         justify-content:flex-start;
         margin-left: 20px;
-        
     }
-
+    /*logo*/
     nav img {
         top: 0;
         width: 160px;
     }
-
+    /*display link list vertically*/
     .navlist {
         display: flex;  
         flex-direction: column;
@@ -133,6 +133,7 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+/*for larger than mobile*/
 @media screen and (min-width: 500px) {
     main {
         max-width: 900px;
@@ -148,6 +149,7 @@ main {
     
 }
 
+/*for desktop*/
 @media screen and (min-width: 900px) {
     .landing {
         padding: 0;
@@ -174,6 +176,7 @@ main {
     border-radius: 5px;
 }
 
+/*for larger than mobile*/
 @media screen and (min-width: 500px) {
     .landing {
         display: flex;
@@ -199,6 +202,8 @@ main {
         
     }
 }
+
+/*for desktop*/
 @media screen and (min-width: 1200px) {
     .landing {
         display: flex;
@@ -211,6 +216,7 @@ main {
     }
     
     .landing img{
+        padding-top: 10px;
         padding-bottom: 5px;
     }
 
@@ -233,10 +239,18 @@ main {
     padding-bottom: 30px;
 }
 
+/*for desktop*/
+@media screen and (min-width: 600px) {
+    .services {
+        margin-top: 40px;
+    }
+}
+
 h1 {
     opacity: 0.7;
 }
 
+/*HEADING used at the start of most sections*/
 .heading {
     height: 10vh;
     font-size: large;
@@ -248,12 +262,13 @@ h1 {
     font-size: 0.8em;
 }
 
-
+/*The text of the heading*/
 .heading span {
     padding-left: 20px;
     font-size: 1.1em;
 }
 
+/*for larger than mobile*/
 @media screen and (min-width: 500px) {  
     .heading span {    
         font-size: 3vmin;
@@ -261,6 +276,7 @@ h1 {
     }
 }
 
+/*if in landscape mode, increase heading sizes to avoid scroll glitch*/
 @media (orientation: landscape) {
     .heading {
         height: 15vh;
@@ -279,18 +295,17 @@ h1 {
     padding-top: 5px;
 }
 
+/*for desktop*/
 @media screen and (min-width: 900px) {
     .services img {
         max-width: 800px;
     }
 }
 
-
 .about {
     padding-top: 30px;
     margin-top: 20px;
     padding-bottom: 20px;
-    
 }
 
 .about figure img {
@@ -323,6 +338,7 @@ h1 {
     max-width: 700px;
 }
 
+/*for larger than mobile*/
 @media screen and (min-width: 500px) {
     .about figure img {
         max-width: 600px;
@@ -333,7 +349,6 @@ h1 {
         background: none;
         color:rgba(80, 78, 78, 0.9);
         margin: auto;
-
     }
 }
 
@@ -354,6 +369,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/*for desktop*/
 @media screen and (min-width: 900px) {
     .featured  figure{
         display: flex;
@@ -382,7 +398,6 @@ h1 {
 
 }
 
-
 .testimonials p {
     font-style: italic;
     text-align: center;
@@ -390,6 +405,7 @@ h1 {
     margin: auto;
 }
 
+/*for larger than mobile*/
 @media screen and (min-width: 500px) {
     .testimonials {
         margin: auto;
@@ -400,11 +416,11 @@ h1 {
         margin: auto;
     }
 
-    .test1 {
+    .testimonial1 {
         grid-column-start: 1;
     }
 
-    .test2 {
+    .testimonial2 {
         grid-column-start: 2;
     }
 
@@ -413,8 +429,6 @@ h1 {
         margin: auto;
     }
 }
-
-
 
 .blog {
     padding-bottom: 30px;
@@ -462,13 +476,13 @@ h1 {
     text-transform: uppercase;
 }
 
+/*for desktop*/
 @media screen and (min-width: 900px) {
     .blog-grid{
         max-width: 800px;
         margin: auto;
     }
 }
-
 
 .contact {
     padding-top: 6vh;
@@ -480,7 +494,6 @@ h1 {
     width: 90%;
     margin:auto;
     text-align: center;
-
 }
 
 .contact-icons img{
@@ -491,11 +504,11 @@ h1 {
 }
 
 footer {
-    
     background-color: rgba(214, 214, 214, 0.7);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
+    font-family:'Roboto',sans-serif;
 }
 
 .links {
@@ -524,7 +537,6 @@ footer {
 }
 
 .foot {
-    
     background-color: rgb(0, 0, 0);
     color: whitesmoke;
     padding-bottom: 20px;

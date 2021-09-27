@@ -3,17 +3,20 @@
     <head>
         <title>Full Moon Photography</title>
         <link rel='stylesheet' href='./styles/style.css'>
+        <link rel="icon" type="image/png" href="./images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <nav>
                 <a href='#'><img src='./images/logo.png'></a>
+                <!--Burger Icon *NOT YET ACTIVE-->
                 <div class='burger'>
                     <div class='hamburger'></div>
                     <div class='hamburger'></div>
                     <div class='hamburger'></div>
                 </div>
+                <!--Nav Items, HIDDEN if on mobile-->
                 <ul class='navlist'>
                     <li><a href='#services'>Services</a></li>
                     <li><a href='#about'>About</a></li>
@@ -24,15 +27,17 @@
             </nav>
         </header>
         <main>
+            <!--Introduces the website-->
             <section class='landing' id='landing'>
                 <img src='./images/landing.jpg'>
+                <!--Text box overlay over the image when on mobile-->
                 <p class='overlay' style='line-height: 30px;'>
                     <b>Vancouver BC Portrait Photographer For Children, Families, And Professionals</b>
                     <br>
                     <span>Capturing <em>Captivating Stories</em> For <em>Incredible People</em> Since 2019.</span>
                 </p>
             </section>
-        
+            <!--Photography services offered-->
             <section class='services' id='services'>
                 <div class='heading'>
                     <span>How can I help?</span>
@@ -48,8 +53,9 @@
                     <h3><a href='#!'>Learn More</a></h3>
                 </figure>
             </section>
-
+            <!--Introducing the photographer-->
             <section class='about' id='about'>
+                <!--Small text box over the image when on mobile, underneath on desktop-->
                 <figure>
                     <img src='./images/photographer.jpg'>
                     <p>Hi, I'm Ashlyn.</p>
@@ -67,6 +73,7 @@
                 </article>
             </section>
 
+            <!--Example photos in a flexbox-->
             <section class='featured' id='featured'>
                 <div class='heading'>
                     <span>Featured Work</span>
@@ -82,24 +89,25 @@
                 </figure>
             </section>
 
+            <!--Some quotes in a grid-->
             <section class='testimonials' id='testimonials'>
                 <div class='heading'>
                     <span>What They're Saying</span>
                 </div>
                 <figure>
-                    <article class='test1'>
+                    <article class='testimonial1'>
                         <p>
                             "Wow! WOW! I’m not crying, you’re crying! These are absolutely gorgeous! I am speechless. THANK YOU for capturing these amazing shots. My heart is full." <br>-Cheniqua
                         </p>
                     </article>
-                    <article class='test2'>
+                    <article class='testimonial2'>
                         <p>
                             "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip enim ad minim veniam, ex ea commodo consequat ullamco laboris!" <br>-Banjo
                         </p>
                     </article>
                 </figure>
             </section>
-
+            <!--Blog post previews in a grid.-->
             <section class='blog' id='blog'>
                 <div class='heading'>
                     <span>Recent Blog Posts</span>
@@ -119,9 +127,9 @@
                     </figure>
                     
                 </div>
-            <h3><a href='#!'>View Blog</a></h3>
+                <h3><a href='#!'>View Blog</a></h3>
             </section>
-
+            <!--Contact section with fake button icons-->
             <section class='contact' id='contact'>
                 <div class='heading'>
                     <span>Let's Connect!</span>
@@ -133,6 +141,7 @@
                 </section>
             </section>
         </main>
+
         <footer>
             <section class='links'>
                 <a href='#services'>Services</a>
